@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/indexpage.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text-primary">Admin Dashboard</h1>
+
+            <p class="index-about-admin">
+                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+            </p>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Student Register</h5>
+                        <a asp-controller="Student" asp-action="Create" class="btn btn-primary btn-block">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Course Details</h5>
+                        <a asp-controller="Courses" asp-action="Courses" class="btn btn-primary btn-block">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Student Details</h5>
+                        <a asp-controller="Student" asp-action="StudentDetails" class="btn btn-primary btn-block">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Add a New Course</h5>
+                        <a asp-controller="Courses" asp-action="Create" class="btn btn-primary btn-block">Add</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
